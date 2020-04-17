@@ -1,6 +1,10 @@
 from random import choice
 from time import sleep
 
+def jo_ken_pô(msg):
+    print(msg)
+    sleep(0.3)
+
 def jogo(pc, jogador):
     print(13*'-=')
     print(f'Computador jogou {pc} \nJogador Jogou {jogador}')
@@ -42,12 +46,9 @@ while True:
     while opcão not in 'PEDRAPAPELTESOURA':
         opcão = str(input('Suas opções: \n - PEDRA \n - PAPEL \n - TESOURA \n Qual é a sua escolha? ')).upper().strip()
 
-    print('JO')
-    sleep(0.3)
-    print('KEN')
-    sleep(0.3)
-    print('PO!!!')
-    sleep(0.3)
+    jo_ken_pô('JO')
+    jo_ken_pô('KEN')
+    jo_ken_pô('PÔ')
 
     jogo(computador, opcão)
     resultado(computador, opcão)
