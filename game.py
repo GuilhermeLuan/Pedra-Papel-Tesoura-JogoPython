@@ -55,5 +55,5 @@ while True:
     print(13*'-=')
     while continuar not in 'SN':
         continuar = str(input('Deseja continuar [S/N] ?')).upper().strip()[0]
-    if continuar == 'N'
+    if continuar == 'N':
         break
